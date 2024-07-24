@@ -636,7 +636,7 @@ nav .menu-btn{
         box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.253);
         text-align: left;
         cursor: pointer;
-        width: 500px;
+        width: 100%;
         transition: all 200ms ease;
         border: 1px solid #c5d1c9;
     }
@@ -693,6 +693,26 @@ nav .menu-btn{
     .testimonial h3 {
         font-weight: bold;
         text-align: right;
+    }
+
+    @media (max-width: 700px){
+        .testimonial img{
+            height: 50px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        .star span{
+           font-size: 20px;
+        }
+
+        .testimonial h3 {
+            font-size: 15px;
+        }
+        
+        .testimonial p{
+            font-size: 13px;
+        }
     }
     
     
