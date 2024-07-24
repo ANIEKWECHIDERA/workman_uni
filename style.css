@@ -13,10 +13,14 @@
     font-family: "DM Sans", sans-serif;
 }
 
+html{
+    font-size: 14x;
+}
+
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(11, 23, 87, 0.7), rgba(2, 6, 20, 0.7)), url(images/uni-banner.jpg);
+    background-image: linear-gradient(rgba(38, 54, 149, 0.551), rgba(2, 6, 20, 0.7)), url(images/uni-banner.jpg);
      background-position: center;
     background-size: cover;
     position: relative;
@@ -24,13 +28,26 @@
 
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding: 3% 6%;
     justify-content: space-between;
     align-items: center;
+    background: #333;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.24);
+    border-bottom: 1px solid #47ae69;
 }
 
 nav img{
-    width: 150px;
+    width: 100px;
+    transition: all 200ms ease;
+}
+
+nav img:hover{
+    padding: 2px;
+    transition: all 200ms ease;
 }
 
 .nav-links{
@@ -98,6 +115,7 @@ font-size: 65px;
     cursor: pointer;
     transition: all 200ms ease;
     border-radius: 10px;
+    border: 1px solid #47ae69;
 }
 
 .hero-btn:hover{
@@ -149,7 +167,7 @@ nav .menu-btn{
         }
 
         nav img{
-            width: 75px;
+            width: 50px;
         }
 
         #open{
@@ -162,6 +180,25 @@ nav .menu-btn{
             border: 1px solid rgba(255, 255, 255, 0.082);
             border-radius: 5px;
             padding: 5px;
+        }
+}
+
+@media (max-width: 1000px){
+    .text-box h1{
+        font-size: 40px;
+        }
+
+        .text-box p{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        nav img{
+            width: 50px;
+        }
+
+        .nav-links li a{
+            font-size: 10px;
         }
 }
 
@@ -186,7 +223,8 @@ nav .menu-btn{
 
 .course{
     flex-basis: 31%;
-    background-color: #0071bc5d;
+    background-color: #333;
+    color: white;
     border-radius: 3px;
     margin-bottom: 5%;
     padding: 20px;
@@ -205,8 +243,12 @@ nav .menu-btn{
     font-weight: 600 ;
 }
 
+.course p{
+    color: rgba(255, 255, 255, 0.628);
+}
+
 .course:hover{
-    border: 1px solid #000000;
+    border: 1px solid #47ae69;
     transition: all 200ms ease;
 }
 
@@ -224,7 +266,27 @@ nav .menu-btn{
     }
 }
 
+@media (max-width: 1000px){
+    .course-list{
+        flex-direction: column
+    }
+
+    .popular-courses{
+    padding-top: 50px;
+    }
+
+    .popular-courses h2 {
+        padding-bottom: 50px;
+    }
+}
+
 /* ---------Our Global Campus----------- */
+
+.global-campus {
+    /* padding: 50px 20px; */
+    background-color: #e9efeb;
+    /* text-align: center; */
+}
 
 
 .container{
@@ -246,16 +308,17 @@ nav .menu-btn{
 }
 
 .campus{
-    flex-basis: 32%;
+    flex-basis: 30%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
-    overflow: hidden;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.132);
 }
 
 .campus img{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 .layer{
@@ -268,6 +331,8 @@ nav .menu-btn{
     padding: 70px 20px;
     transition: all 200ms ease;
     cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #ebe3e3;
 }
 
 .layer:hover{
@@ -276,35 +341,44 @@ nav .menu-btn{
 }
 
 .layer h3{
-    margin-bottom: 20px;
     color: white;
     width: 100%;
     font-weight: 900;
     font-size: 30px;
-    bottom: 0;
+    top: 50%;
     left: 50%;
     transform: translate(-50%);
     position: absolute;
-    opacity: 0;
     transition: all 200ms ease;
+    background-color: #47ae69ec;
 }
 
 .layer:hover h3{
-    bottom: 15%;
-    opacity: 1;
+    top: 15%;
     transition: all 200ms ease;
 }
 
 .layer p{
-    color: rgba(255, 255, 255, 0.247);
+    color: rgb(255, 255, 255);
+    font-weight: 400;
     text-align: left;
     line-height: 25px;
     transition: all 200ms ease;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    height: 200px;
 }
 
-.layer p:hover{
+.layer:hover p{
     color: white;
     transition: all 200ms ease;
+    bottom: 30%;
+    opacity: 1;
+    padding: 20px 20px;
 }
 
 .campus-list{
@@ -312,7 +386,6 @@ nav .menu-btn{
     display: flex;
     justify-content: space-between;
     align-content: center;
-    
 }
 
 @media (max-width: 700px){
@@ -327,4 +400,299 @@ nav .menu-btn{
     .popular-courses h2 {
         padding-bottom: 50px;
     }
+
+    .layer h3{
+        color: white;
+        width: 100%;
+        font-weight: 900;
+        font-size: 30px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        transition: all 200ms ease;
+        background-color: #47ae69ec;
+    }
+
+    .layer:hover h3{
+        top: 0;
+        transition: all 200ms ease;
+    }
+
+    .layer:hover p{
+        color: white;
+        transition: all 200ms ease;
+        bottom: 18%;
+        opacity: 1;
+        padding: 10px 25px;
+        font-size: 11px;
+    }
 }
+
+@media (min-width: 701px) and (max-width: 1024px){
+    .campus-list{
+        flex-direction: column
+    }
+
+    .popular-courses{
+    padding-top: 50px;
+    }
+
+    .popular-courses h2 {
+        padding-bottom: 50px;
+    }
+
+    .layer{
+        background: transparent;
+        position: relative;
+        background-color: #0071bccb;
+        padding: 10px 10px;
+        height: 327.19px;
+        border-radius: 0px;
+    }
+    
+    .layer h3{
+        color: white;
+        width: 100%;
+        font-weight: 900;
+        font-size: 30px;
+        top: 0;
+        left: -50%;
+        transform: translate(-50%);
+        position: absolute;
+        transition: all 200ms ease;
+        background-color: #47ae69ec;
+    }
+
+    .layer:hover h3{
+        top: 0;
+        padding: 0;
+    }
+
+    .layer p{
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+        text-align: left;
+        position: relative;
+        opacity: 1;
+    }
+
+    .layer:hover p{
+        color: white;
+        bottom: 0;
+        padding: 0;
+    }
+
+    .campus{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .campus img{
+        width: 50%;
+        border-radius: 0;
+    }
+}
+
+    /* --------------Our Major Facilities------------------ */
+
+
+    .major-facilities{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+        
+    }
+
+    .facility-list{
+        margin-top: 62.031px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .facility{
+        flex-basis: 25%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        position: relative;
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.253);
+        padding: 10px;
+        margin: 20px;
+        background-color: #333;
+        border: 1px solid #38b863;
+        transition: all 200ms ease;
+        cursor: pointer;
+    }
+
+    .facility:hover{
+        border: 1px solid #09e050;
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.403);
+        transition: all 200ms ease;
+    }
+
+    .facility img{
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .facility h3{
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    .facility p{
+        text-align: left;
+        line-height: 25px;
+        color: rgba(255, 255, 255, 0.628);
+        margin: 10px;
+    }
+
+    .see-more-btn {
+        padding: 10px 20px;
+        background-color: #47ae6900;
+        color: #333;
+        border: 1px solid rgb(179, 194, 185);
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        margin-top: 10px;
+        display: none;
+    }
+    
+
+    @media (max-width: 700px){
+        .facility-list{
+            flex-direction: column
+        }
+
+        .more-facilities {
+            display: none;
+        }
+
+        .see-more-btn{
+            display: inline;
+        }
+    
+    }
+
+    
+
+    @media (min-width: 701px) and (max-width: 1024px){
+        .facility-list{
+            flex-direction: column
+        } 
+
+        .more-facilities {
+            display: none;
+        }
+
+        .see-more-btn{
+            display: inline;
+        }
+    }
+
+
+    /* -------------------testimonials------------------------ */
+
+
+
+    .testimonials {
+        width: 100%;
+        margin: auto;
+        margin-top: 62.031px;;
+        background-color: #d5e6ed8d;
+        text-align: center;
+    }
+    
+    .testimonials .container {
+        max-width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .testimonials h2 {
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+    
+    .testimonial-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        /* transition: transform 1 ease-in-out; */
+    }
+    
+    .testimonial {
+        /* display: flex;
+        justify-content: space-between; */
+        padding: 20px;
+        background-color: #ffffff;
+        margin-bottom: 5%;
+        border-radius: 10px;
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.253);
+        text-align: left;
+        cursor: pointer;
+        width: 500px;
+        transition: all 200ms ease;
+        border: 1px solid #c5d1c9;
+    }
+
+    .testimonial:HOVER{ 
+        border: 1px solid #09e050;
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.403);
+        transition: all 200ms ease;
+    }
+
+    /* .testimonial > div{
+        margin-top:30px;
+    } */
+
+    .testimonial img{
+        height: 100px;
+        margin: 10px;
+        border-radius: 20px;
+    }
+
+    .img-remark{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .remark-stars h3{
+        text-align: center !important;
+    }
+
+    .remark-stars {
+        align-items: center;
+        padding: 5%;
+    }
+
+    .star{
+        margin-top: 10px;
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+    }
+
+    .star span{
+        font-size: 40px;
+    }
+    
+    .testimonial p {
+        line-height: 25px;
+        margin-bottom: 1em;
+        font-size: 15px;
+        color: rgb(163, 160, 172);
+    }
+    
+    .testimonial h3 {
+        font-weight: bold;
+        text-align: right;
+    }
+    
+    
