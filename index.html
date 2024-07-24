@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Man University</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
 </head>
 <body>
@@ -158,7 +159,7 @@
                         <h3>- John Smith, CSE Student</h3>
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial more-testimonials">
                     <div class="img-remark">
                         <img src="https://img.freepik.com/free-photo/studio-shot-delighted-satisfied-dark-skinned-female-worker-wears-round-big-glasses-being-glad-be-promoted-work_273609-3647.jpg?t=st=1721798035~exp=1721801635~hmac=ddfdfcabf2fc6f1f6128ea01b4a4d9815c120ab23745cc636cd359912c2c19e5&w=826" alt="Studio shot of delighted satisfied dark skinned female worker, wears round big glasses, being glad to be promoted at work">
                         <div class="remark-stars">
@@ -177,7 +178,7 @@
                         <h3>- Emily Johnson, Psychology Student</h3>
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial more-testimonials">
                     <div class="img-remark">
                         <img src="https://img.freepik.com/free-photo/medium-shot-smiley-man-portrait_23-2149455852.jpg?t=st=1721798110~exp=1721801710~hmac=1f240dbf27091734b0b736d12b4c8c8dee135c1929d60f593821b98d7635fae5&w=826" alt="Medium shot smiley man portrait">
                         <div class="remark-stars">
@@ -196,7 +197,7 @@
                         <h3>- Michael Lee, MBA Student</h3>
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial more-testimonials">
                     <div class="img-remark">
                         <img src="https://img.freepik.com/premium-photo/confident-female-business-executive-standing-office_107420-79149.jpg?w=826" alt="Confident female business executive standing in office">
                         <div class="remark-stars">
@@ -215,7 +216,7 @@
                         <h3>- Sara Martinez, International Relations Student</h3>
                     </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial more-testimonials">
                     <div class="img-remark">
                         <img src="https://img.freepik.com/free-photo/portrait-cheerful-male-doctor_171337-1491.jpg?t=st=1721798594~exp=1721802194~hmac=3732d84fcbb5484e2c4f8867ae1ac7e9ea2a20a7add99f9a39726eea90e5c0ae&w=826" alt="Portrait of a cheerful male doctor">
                         <div class="remark-stars">
@@ -234,14 +235,30 @@
                     </div>
                 </div>
             </div>
+            <button id="testimonials" class="see-more-btn">See More...</button>
         </div>
     </section>
-    
-    
-    
 
+    <section class="call-to-action">
+        <div class="container">
+            <h2>Take the First Step Towards Your Future</h2>
+            <p>At Work Man University, we believe in empowering our students to reach their fullest potential. <br> Whether you're a recent high school graduate, a transfer student, or a professional seeking to advance your career, our diverse programs and supportive community are here to help you succeed. <br> Join us and be part of a vibrant learning environment that fosters growth, innovation, and lifelong friendships.</p>
+            <a href="apply.html" class="cta-button">Apply Now</a>
+        </div>
+    </section>
 
-
+    <section class="footer">
+        <h3>Connect With Us:</h3>
+        <div class="icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+        <img src="images/Logo.png" alt="logo">
+        <p>Designed by ST<span>.DEV</span></p>
+    </section>
+    
 <!-- Here, the javascript is used to toggle the showMenu() and hideMeny() -->
 
     <script>
@@ -264,35 +281,14 @@
         this.style.display = 'none';
     });
     </script>
-    <!-- <script>
-        const prevButton = document.querySelector('.prev');
-        const nextButton = document.querySelector('.next');
-        const testimonialList = document.querySelector('.testimonial-list');
-        const testimonials = document.querySelectorAll('.testimonial');
-        let currentIndex = 0;
-        const testimonialCount = testimonials.length;
-    
-        function updateTestimonials() {
-            testimonials.forEach((testimonial, index) => {
-                testimonial.style.transform = `translateX(${(index - currentIndex) * 10}%)`;
+    <script>
+        document.getElementById('testimonials').addEventListener('click', function() {
+            const moreTestimonials = document.querySelectorAll('.more-testimonials');
+            moreTestimonials.forEach(function(testimonial) {
+                testimonial.style.display = 'block';
             });
-        }
-    
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % testimonialCount;
-            updateTestimonials();
+            this.style.display = 'none';
         });
-    
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + testimonialCount) % testimonialCount;
-            updateTestimonials();
-        });
-    
-        // Initial update
-        updateTestimonials();
-    </script> -->
-    
-
-     
+    </script>
 </body>
 </html>
