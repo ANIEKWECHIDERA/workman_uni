@@ -59,6 +59,11 @@ nav img:hover{
     text-align: right;
 }
 
+nav .bi{
+    margin: 5px;
+    font-size: 14px;
+}
+
 .nav-links ul li{
     list-style: none;
     display: inline-block;
@@ -505,7 +510,7 @@ nav .menu-btn{
         width: 100%;
         margin: auto;
         text-align: center;
-        padding-top: 50px;
+        /* padding-top: 50px; */
         background-size: cover;
         /* background-image: url('https://img.freepik.com/free-vector/monochrome-star-pattern-vector-background-illustration-from-geometrical-shapes_1164-1450.jpg?t=st=1721823327~exp=1721826927~hmac=2d872905e5a38eae7a53ff83e73b6f1ba38547526cc77f66532345ed1c413e58&w=826'); */
     }
@@ -690,7 +695,7 @@ nav .menu-btn{
     }
 
     .star span{
-        font-size: 40px;
+        font-size: 20px;
         color: #FFB901;
     }
     
