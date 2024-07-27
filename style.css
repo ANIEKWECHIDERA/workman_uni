@@ -71,10 +71,15 @@ nav .bi{
     position: relative;
 }
 
-.nav-links li a{
+.nav-links li a {
     color: white;
     text-decoration: none;
     font-size: 13px;
+}
+
+.nav-links ul li.active i,
+.nav-links ul li.active a {
+    color: #47AE6A;
 }
 
 .nav-links li::after{
@@ -179,6 +184,11 @@ nav .menu-btn{
             width: 50px;
         }
 
+        .nav-links ul li.active i,
+        .nav-links ul li.active a {
+        color: #333333;
+        }
+
         #open{
             border: 1px solid rgba(255, 255, 255, 0.082);
             border-radius: 5px;
@@ -238,7 +248,7 @@ nav .menu-btn{
     margin-bottom: 5%;
     padding: 20px;
     box-shadow: 1px 5px 10px rgba(4, 80, 27, 0.144);
-    text-align: left;
+    text-align: justify;
     line-height: 25px;
     border: 1px solid #0108031a;
     cursor: pointer;
@@ -555,7 +565,7 @@ nav .menu-btn{
     }
 
     .facility p{
-        text-align: left;
+        text-align: justify;
         line-height: 25px;
         color: rgba(255, 255, 255, 0.628);
         margin: 10px;
@@ -704,6 +714,7 @@ nav .menu-btn{
         margin-bottom: 1em;
         font-size: 15px;
         color: rgb(163, 160, 172);
+        text-align: justify;
     }
     
     .testimonial h3 {
@@ -764,6 +775,7 @@ nav .menu-btn{
         margin-bottom: 40px;
         color: rgba(255, 255, 255, 0.837);
         line-height: 30px;
+        text-align: justify;
     }
     
     .call-to-action .cta-button {
@@ -833,4 +845,387 @@ nav .menu-btn{
 .footer img{
     height: 100px;
 }
+
+
+/* -------------About Us Page------------------------ */
+
+.sub-header{
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(rgba(38, 54, 149, 0.551), rgba(2, 6, 20, 0.7)), url(images/uni-banner1.png);
+}
+
+.sub-header h1{
+    padding-top: 15%;
+    font-size: 65px
+}
+
+.about h2{
+ margin-left: 50px;
+ margin-bottom: 0;
+ /* background-color: #09e050; */
+ text-align: left;
+}
+
+.about .container{
+    width: 80%;
+}
+
+.about-content-text img{
+    width: 30%;
+    /* margin-bottom: 50px; */
+    border-radius: 5px;
+}
+
+.about-content-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #bad3c231; */
+    margin-top: 50px;
+}
+
+.about-content-text .text{
+    padding: 50px;
+    margin-right: 50px;
+
+}.about-content-text h3{
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.about-content-text p{
+    text-align: justify;
+    line-height: 25px;
+    color: rgb(163, 160, 172);
+}
+
+.about-content-text .text ul li{
+    text-align: justify;
+    margin-bottom: 15px;
+    color: rgb(163, 160, 172);
+}
+
+.about-content-text .text ul li strong{
+    color: #333;
+}
+
+@media (max-width: 700px){
+    .sub-header h1{
+        padding-top: 40%;
+        font-size: 40px
+    }
+
+    .about h2{
+        margin-left: 0px;
+        margin-bottom: 0;
+        /* background-color: #09e050; */
+        text-align: center;
+        font-size: 30px;
+       }
+
+       .about .container{
+        width: 100%;
+    }
     
+    .about-content-text{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: #bad3c200; */
+        margin-top: 50px;
+    }
+
+    .about-content-text .text{
+        padding: 20px;
+        margin-right: 0;
+    }
+
+    .about-content-text img{
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1024px){
+    .sub-header h1{
+        padding-top: 20%;
+        font-size: 40px
+    }
+
+    .about h2{
+        margin-left: 0px;
+        margin-bottom: 0;
+        /* background-color: #09e050; */
+        text-align: center;
+        font-size: 30px;
+       }
+
+       .about .container{
+        width: 100%;
+    }
+    
+    .about-content-text{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: #bad3c200; */
+        margin-top: 50px;
+    }
+
+    .about-content-text .text{
+        padding: 20px;
+        margin-right: 0;
+    }
+
+    .about-content-text img{
+        width: 70%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+
+.courses {
+    padding: 60px 0px;
+}
+
+.courses .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.courses h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.courses p {
+    font-size: 1.2em;
+    text-align: justify;
+    margin-bottom: 40px;
+    color: rgb(163, 160, 172);
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course-category {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.course-category h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #47ae69;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.course-category ul {
+    
+    padding-left: 0;
+}
+
+.course-category ul li {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: left;
+    border: 1px solid color rgb(1, 1, 3);
+}
+
+.courses .call-to-action .container{
+    background-image: none;
+}
+
+.blog-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.blog-wrapper .container{
+    width: 100%;
+}
+
+.latest-news {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.latest-news .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.latest-news h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 200ms ease;
+}
+
+.news-item:hover {
+    transform: translateY(-3px);
+}
+
+.news-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.news-content {
+    flex: 1;
+    cursor: pointer;
+}
+
+.news-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.news-content p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.news-content a {
+    color: #47ae69;
+    text-decoration: none;
+    transition: color 200ms ease;
+}
+
+.news-content a:hover {
+    color: #6992dd;
+}
+
+.news-date {
+    font-size: 0.9em;
+    color: #999;
+}
+
+.blog {
+    padding: 60px 10px;
+    /* background-color: #f4f4f4; */
+   margin-right: 0, auto;
+}
+
+.blog .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: sticky;
+    top: 80px;
+}
+
+.blog h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #47ae69;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.blog p {
+    font-size: 1.2em;
+    text-align: justify;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.blog-categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    /* width: 200px; */
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 200ms ease;
+    cursor: pointer;
+}
+
+.category:hover {
+    transform: translateY(-3px);
+}
+
+.category h3 {
+    font-size: 14px;
+    margin-right: 15px;
+    color: #555;
+
+}
+
+.category p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.post-count {
+    display: inline-block;
+    padding: 2px 5px;
+    background-color: #47ae69;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 10px;
+    align-content: center;
+}
+
+
