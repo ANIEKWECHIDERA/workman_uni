@@ -16,9 +16,9 @@
           <div class="nav-links" id="navLinks">
             <span class="material-symbols-outlined menu-btn" id="close" onclick="hideMenu()">close</span>
             <ul>
-                <li><i class="bi bi-house-door"></i><a href="https://aniekwechidera.github.io/workman_uni/index.html">HOME</a></li>
-                <li><i class="bi bi-info-square"></i><a href="https://aniekwechidera.github.io/workman_uni/About.html">ABOUT</a></li>
-                <li><i class="bi bi-mortarboard"></i><a href="https://aniekwechidera.github.io/workman_uni/Course.html">COURSE</a></li>
+                <li><i class="bi bi-house-door"></i><a href="http://127.0.0.1:5500/hello%20world/WEB%20DEV%20WITTH%20GREATSTACK/Work%20Man%20University%20Website/index.html">HOME</a></li>
+                <li><i class="bi bi-info-square"></i><a href="http://127.0.0.1:5500/hello%20world/WEB%20DEV%20WITTH%20GREATSTACK/Work%20Man%20University%20Website/About.html">ABOUT</a></li>
+                <li><i class="bi bi-mortarboard"></i><a href="http://127.0.0.1:5500/hello%20world/WEB%20DEV%20WITTH%20GREATSTACK/Work%20Man%20University%20Website/course.html">COURSE</a></li>
                 <li class="active"><i class="bi bi-card-text"></i><a href="#">BLOG</a></li>
                 <li><i class="bi bi-envelope"></i><a href="http://127.0.0.1:5500/hello%20world/WEB%20DEV%20WITTH%20GREATSTACK/Work%20Man%20University%20Website/contact.html">CONTACT </a></li>
             </ul>
@@ -31,7 +31,25 @@
     <section class="blog-wrapper">
         <div class="latest-news">
             <div class="container">
-                <h2>Latest News</h2>
+                <div class="blog-wrapper-latest-news-container-top">
+                    <h2>Latest News</h2>
+                    <div>
+                        <i class="bi bi-three-dots" id="catBtn" onclick="showCat()"></i>
+                        
+                    </div>
+                </div>
+
+                <div class="cat-list"  id="cat">
+                    <ul>
+                        <li>Campus News <span>42 posts</span></li>
+                        <li>Academic Insights <span>35 posts</span></li>
+                        <li>Student Life <span>28 posts</span></li>
+                        <li>Alumni Stories <span>22 posts</span></li>
+                        <li>Career Advice <span>18 posts</span></li>
+                        <li>Global Perspectives <span>15 posts</span></li>
+                    </ul>
+                </div>
+                
                 <div class="news-list">
                     <div class="news-item">
                         <img src="https://img.freepik.com/premium-photo/photo-automation-semiconductor-manufacturing-with-robotic-arms-factory-generated-by-ai_972969-60866.jpg?w=826" alt="New Research Center Opening">
@@ -123,13 +141,22 @@
 
     <script>
         const navLinks = document.getElementById('navLinks');
-        const open = document.getElementById('open')
+        const open = document.getElementById('open');
         
         function showMenu(){
             navLinks.style.right = "0"
         }
         function hideMenu(){
             navLinks.style.right = "-200px"
+        }
+    </script>
+    <script>
+        function showCat() {
+            if (cat.style.display === "none") {
+                cat.style.display = 'block';
+            } else {
+                cat.style.display = "none";
+            }
         }
     </script>
 </body>
