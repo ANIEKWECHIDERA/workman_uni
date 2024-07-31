@@ -21,5 +21,5 @@ $headers = "From: $email_from \r\n";
 $headers .= "Reply -To: $visitor_email \r\n";
 
  mail($to,$email_subject,$email_body,$headers);
-header("Location: contact.html");
+header("Location: https://aniekwechidera.github.io/workman_uni/contact.html");
 ?>
