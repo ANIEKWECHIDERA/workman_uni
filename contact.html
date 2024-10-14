@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Man University - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+          <a href="index.html"><img src="images/Logo.png" alt="university logo"></a> 
+          <div class="nav-links" id="navLinks">
+            <span class="material-symbols-outlined menu-btn" id="close" onclick="hideMenu()">close</span>
+            <ul>
+                <li><i class="bi bi-house-door"></i><a href="http://127.0.0.1:5500/hello%20world/WEB%20DEV%20WITTH%20GREATSTACK/Work%20Man%20University%20Website/index.html">HOME</a></li>
+                <li><i class="bi bi-info-square"></i><a href="http://127.0.0.1:5500/hello%20world/WEB%20DEV%20WITTH%20GREATSTACK/Work%20Man%20University%20Website/About.html">ABOUT</a></li>
+                <li><i class="bi bi-mortarboard"></i><a href="http://127.0.0.1:5500/hello%20world/WEB%20DEV%20WITTH%20GREATSTACK/Work%20Man%20University%20Website/course.html">COURSE</a></li>
+                <li><i class="bi bi-card-text"></i><a href="http://127.0.0.1:5500/hello%20world/WEB%20DEV%20WITTH%20GREATSTACK/Work%20Man%20University%20Website/blog.html">BLOG</a></li>
+                <li class="active"><i class="bi bi-envelope"></i><a href="#">CONTACT </a></li>
+            </ul>
+          </div>
+          <span class="material-symbols-outlined menu-btn" id="open" onclick="showMenu()">menu</span>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d126072.41592250428!2d7.411699891601348!3d9.085342364459327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sThings%20to%20do!5e0!3m2!1sen!2sng!4v1722280093419!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+        </iframe>
+    </section>
+
+    <section class="contact-us">
+            <div class="contact-row">
+                <div class="contact-col">
+                    <div>
+                        <i class="bi bi-house-door" style="color: #47ae69;"></i>
+                        <span>
+                            <h5>Municipal, Abuja</h5>
+                            <p>Federal Capital Territory</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="bi bi-phone" style="color: #47ae69;;"></i>
+                        <span>
+                            <h5>+234 803 456 5321</h5>
+                            <p>Monday to Saturday, 8AM to 6PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="bi bi-envelope" style="color: #47ae69;;"></i>
+                        <span>
+                            <h5>info@workmanuniversity.com</h5>
+                            <p>Please contact us</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form action="Form-Handler.php" method="post">
+                        <input type="text" name="name" placeholder="Enter your Fullname" required>
+                        <input type="email" name="email" placeholder="Enter your Email Address" required>
+                        <input type="text" name="subject" placeholder="Enter Subject" required>
+                        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                        <button type="submit" class="cta-button"> Send Message</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+    <section class="footer">
+        <h3>Connect With Us:</h3>
+        <div class="icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+        <img src="images/Logo.png" alt="logo">
+        <p>Designed by MIDAS<span>.WEB</span></p>
+    </section>
+    
+<!-- Here, the javascript is used to toggle the showMenu() and hideMeny() -->
+
+    <script>
+        const navLinks = document.getElementById('navLinks');
+        const open = document.getElementById('open');
+        
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+    <script>
+        function showCat() {
+            if (cat.style.display === "none") {
+                cat.style.display = 'block';
+            } else {
+                cat.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
