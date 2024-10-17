@@ -17,6 +17,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.css"
+    />
   </head>
   <body>
     <section class="sub-header">
@@ -39,7 +43,7 @@
               <i class="bi bi-info-square"></i><a href="#">ABOUT</a>
             </li>
             <li>
-              <i class="bi bi-mortarboard"></i><a href="course.html">COURSE</a>
+              <i class="bi bi-mortarboard"></i><a href="Course.html">COURSE</a>
             </li>
             <li><i class="bi bi-card-text"></i><a href="blog.html">BLOG</a></li>
             <li>
@@ -54,15 +58,15 @@
           >menu</span
         >
       </nav>
-      <div class="sub-header-h1"><h1>About Us</h1></div>
+      <div class="sub-header-h1" data-aos="zoom-in"><h1>About Us</h1></div>
     </section>
 
     <section class="about">
       <div class="container">
-        <h2>Welcome To Work Man University</h2>
+        <h2 data-aos="zoom-in">Welcome To Work Man University</h2>
         <div class="about-content">
           <div class="about-content-text">
-            <div class="text">
+            <div class="text" data-aos="fade-up">
               <p>
                 Welcome to Work Man University, where we are committed to
                 transforming lives through education and fostering a community
@@ -88,12 +92,13 @@
               </p>
             </div>
             <img
+              data-aos="zoom-in"
               src="https://img.freepik.com/free-photo/portrait-young-student-happy-be-back-university_23-2148586553.jpg?t=st=1722034573~exp=1722038173~hmac=37d1fca1acd791b5a90592f4afeda2fd22a0792b5ac5e9ee2913c60d199d8517&w=740"
               alt=""
             />
           </div>
           <div class="about-content-text">
-            <div class="text">
+            <div class="text" data-aos="fade-up">
               <h3>Core Values</h3>
               <ul>
                 <li>
@@ -124,12 +129,13 @@
               </ul>
             </div>
             <img
+              data-aos="zoom-in"
               src="https://img.freepik.com/premium-photo/man-with-name-tag-his-neck-stands-front-crowd-people_662214-621120.jpg?w=826"
               alt=""
             />
           </div>
           <div class="about-content-text">
-            <div class="text">
+            <div class="text" data-aos="fade-up">
               <h3>History and Achievements</h3>
               <p>
                 Founded in 1989, Work Man University has grown from a small
@@ -151,6 +157,7 @@
               </p>
             </div>
             <img
+              data-aos="zoom-in"
               src="https://img.freepik.com/free-photo/group-graduates-throws-their-graduation-caps-up-air_978521-18724.jpg?w=740"
               alt="A group of graduates throws their graduation caps up in the air"
             />
@@ -168,7 +175,7 @@
         <i class="bi bi-linkedin"></i>
       </div>
       <img src="images/Logo.png" alt="logo" />
-      <p>Designed by MIDAS<span>.WEB</span></p>
+      <p>&copy; Work Man University 2024. All rights reserved.</p>
     </section>
 
     <!-- Here, the javascript is used to toggle the showMenu() and hideMeny() -->
@@ -183,6 +190,13 @@
       function hideMenu() {
         navLinks.style.right = "-200px";
       }
+    </script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 600, // Duration of animations in milliseconds
+        once: false, // Whether animation should happen only once
+      });
     </script>
   </body>
 </html>

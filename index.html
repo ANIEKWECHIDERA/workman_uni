@@ -17,10 +17,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.css"
+    />
   </head>
   <body>
     <section class="header">
-      <nav>
+      <nav data-aos="fade-down">
         <a href="index.html"
           ><img src="images/Logo.png" alt="university logo"
         /></a>
@@ -39,7 +43,7 @@
               <i class="bi bi-info-square"></i><a href="About.html">ABOUT</a>
             </li>
             <li>
-              <i class="bi bi-mortarboard"></i><a href="course.html">COURSE</a>
+              <i class="bi bi-mortarboard"></i><a href="Course.html">COURSE</a>
             </li>
             <li><i class="bi bi-card-text"></i><a href="blog.html">BLOG</a></li>
             <li>
@@ -55,9 +59,13 @@
         >
       </nav>
       <div class="text-box">
-        <h1>Welcome to Work Man University</h1>
-        <p>Where Dreams Take Flight and Futures Are Forged</p>
-        <a href="#popular courses" class="hero-btn">Learn More</a>
+        <h1 data-aos="fade">Welcome to Work Man University</h1>
+        <p data-aos="fade-up">
+          Where Dreams Take Flight and Futures Are Forged
+        </p>
+        <a href="#popular courses" class="hero-btn" data-aos="fade-up"
+          >Learn More</a
+        >
       </div>
     </section>
 
@@ -65,7 +73,7 @@
       <h2>Our Most Popular Courses</h2>
       <div class="course-list">
         <!-- <img src="https://img.freepik.com/free-photo/people-working-together-animation-studio_23-2149208028.jpg?t=st=1721702427~exp=1721706027~hmac=e446bbd499237b611192d3415c24b5c15e15ec58979fa1f0e2cc8d2bee1b002d&w=740" alt="business administration students"> -->
-        <div class="course">
+        <div class="course" data-aos="fade-up" data-aos-delay="100">
           <h3>Bachelor of Business Administration (BBA)</h3>
           <p>
             Unlock your potential with our comprehensive BBA program. Designed
@@ -75,7 +83,7 @@
             pave the way to your success.
           </p>
         </div>
-        <div class="course">
+        <div class="course" data-aos="fade-up" data-aos-delay="200">
           <h3>Computer Science and Engineering (CSE)</h3>
           <p>
             Dive into the world of technology with our CSE program. From coding
@@ -85,7 +93,7 @@
             trailblazer.
           </p>
         </div>
-        <div class="course">
+        <div class="course" data-aos="fade-up" data-aos-delay="300">
           <h3>Psychology</h3>
           <p>
             Explore the depths of the human mind with our Psychology program.
@@ -99,12 +107,12 @@
     </section>
 
     <section class="global-campus">
-      <div class="container">
+      <div class="container" data-aos="zoom-in">
         <h2>Our Global Campus</h2>
         <!-- <p>At Work Man University, we believe in providing a truly global education experience. Our campuses around the world offer unique opportunities for students to immerse themselves in different cultures, gain international perspectives, and broaden their horizons. Discover three of our standout campuses and what makes them exceptional.</p> -->
 
-        <div class="campus-list">
-          <div class="campus">
+        <div class="campus-list" data-aos="zoom-in">
+          <div class="campus" data-aos="fade-up" data-aos-delay="100">
             <img
               src="https://img.freepik.com/premium-photo/castello-di-rivoli_469558-5118.jpg?w=826"
               alt="A school in New york"
@@ -121,7 +129,7 @@
               </p>
             </div>
           </div>
-          <div class="campus">
+          <div class="campus" data-aos="fade-up" data-aos-delay="200">
             <img
               src="https://img.freepik.com/free-photo/peach-tree-blossom-tokyo-daylight_23-2148933929.jpg?t=st=1721706924~exp=1721710524~hmac=8a0b105c31a000903380b6b1f7fa0e4fbfdec4959e4b72cdc39715c7d6aa16c4&w=826"
               alt="A school in Tokyo, Japan"
@@ -138,7 +146,7 @@
               </p>
             </div>
           </div>
-          <div class="campus">
+          <div class="campus" data-aos="fade-up" data-aos-delay="400">
             <img
               src="https://img.freepik.com/free-photo/male-with-textbook-backpack-walking-park_23-2147850703.jpg?t=st=1721788292~exp=1721791892~hmac=ce33c2d91c07b6866dcc5b7079ae0c63b178a18062b1cc4391654cbb660e3f14&w=826"
               alt="A school in France"
@@ -159,13 +167,15 @@
       </div>
     </section>
 
-    <section class="major-facilities">
+    <section class="major-facilities" data-aos="zoom-in">
       <div class="container">
-        <h2>Our Major Facilities</h2>
+        <h2 data-aos="fade">Our Major Facilities</h2>
         <!-- <p>At Work Man University, we take pride in offering state-of-the-art facilities that support our students’ academic, professional, and personal growth. Our campus is designed to foster a conducive learning environment, promote innovation, and provide a well-rounded university experience. Explore some of our key facilities below.</p> -->
         <div class="facility-list">
-          <div class="facility">
+          <div class="facility" data-aos="fade-up" data-aos-delay="100">
             <img
+              data-aos="flip-left"
+              data-aos-delay="150"
               src="https://img.freepik.com/free-photo/side-view-male-researcher-biotechnology-laboratory-with-plant_23-2148776134.jpg?t=st=1721790085~exp=1721793685~hmac=6668428c56bf3d5b0f7ede535e849611bffa0d9e513c9e3fdedc74a250152b79&w=826"
               alt="Side view of male researcher in the biotechnology laboratory with plant"
             />
@@ -178,8 +188,10 @@
               pursuit of academic excellence.
             </p>
           </div>
-          <div class="facility">
+          <div class="facility" data-aos="fade-up" data-aos-delay="200">
             <img
+              data-aos="flip-left"
+              data-aos-delay="250"
               src="https://img.freepik.com/free-photo/front-view-smiley-girl-holding-stack-books_23-2148448007.jpg?t=st=1721790177~exp=1721793777~hmac=7185e14d0b209fca62b7d0c172c2a6a6daf483fd14b84bdee97da3393877ff28&w=826"
               alt="Front view smiley girl holding stack of books"
             />
@@ -192,8 +204,14 @@
               study, research, and expand their horizons.
             </p>
           </div>
-          <div class="facility more-facilities">
+          <div
+            class="facility more-facilities"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
+              data-aos="fade-up"
+              data-aos-delay="350"
               src="https://img.freepik.com/free-photo/amateur-football-concept_23-2147833413.jpg?t=st=1721790317~exp=1721793917~hmac=378b51c5816e7ee48ad2d5754f0e730989019de11619fa511d48caae3ee13935&w=826"
               alt="Amateur football concept"
             />
@@ -206,8 +224,14 @@
               healthy, and engaged in campus life.
             </p>
           </div>
-          <div class="facility more-facilities">
+          <div
+            class="facility more-facilities"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <img
+              data-aos="flip-left"
+              data-aos-delay="450"
               src="https://img.freepik.com/free-photo/teamwork-environment-project_23-2148894031.jpg?t=st=1721790479~exp=1721794079~hmac=159902891944a79f0b248c3a537e4ca077eb0d1a9d4e5e1de1d6d14c020f34f0&w=826"
               alt="Teamwork for environment project"
             />
@@ -220,8 +244,14 @@
               for future careers.
             </p>
           </div>
-          <div class="facility more-facilities">
+          <div
+            class="facility more-facilities"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
+              data-aos="flip-left"
+              data-aos-delay="550"
               src="https://img.freepik.com/free-photo/architecture-sleep-window-relax-old_1253-605.jpg?t=st=1721790608~exp=1721794208~hmac=97e00d3b229994e93fed993562a88a452d8190d6085ab3a5dd051b2d2355af7d&w=826"
               alt="student dormitory"
             />
@@ -238,7 +268,7 @@
       </div>
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials" data-aos="zoom-in">
       <div class="container">
         <h2>What Our Students Say</h2>
         <div class="testimonial-list">
@@ -408,7 +438,7 @@
     </section>
 
     <section class="call-to-action">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <h2>Take the First Step Towards Your Future</h2>
         <p>
           At Work Man University, we believe in empowering our students to reach
@@ -432,7 +462,7 @@
         <i class="bi bi-linkedin"></i>
       </div>
       <img src="images/Logo.png" alt="logo" />
-      <p>Designed by MIDAS<span>.WEB</span></p>
+      <p>&copy; Work Man University 2024. All rights reserved.</p>
     </section>
 
     <!-- Here, the javascript is used to toggle the showMenu() and hideMenu() -->
@@ -470,6 +500,13 @@
           });
           this.style.display = "none";
         });
+    </script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 600, // Duration of animations in milliseconds
+        once: false, // Whether animation should happen only once
+      });
     </script>
   </body>
 </html>

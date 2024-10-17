@@ -17,6 +17,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.css"
+    />
   </head>
   <body>
     <section class="sub-header">
@@ -54,12 +58,12 @@
           >menu</span
         >
       </nav>
-      <div class="sub-header-h1"><h1>Our Courses</h1></div>
+      <div class="sub-header-h1"><h1 data-aos="fade-up">Our Courses</h1></div>
     </section>
 
     <section class="courses">
       <div class="container">
-        <h2>Our Courses</h2>
+        <h2 data-aos="fade-up">Our Courses</h2>
         <p>
           Explore our diverse range of programs designed to prepare you for
           success in your chosen field. Whether you're passionate about science,
@@ -68,80 +72,80 @@
         </p>
         <div class="course-list">
           <div class="course-category">
-            <h3>Undergraduate Programs</h3>
+            <h3 data-aos="zoom-in">Undergraduate Programs</h3>
             <ul>
-              <li>
+              <li data-aos="fade" data-aos-delay="100">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Bachelor of Science in Computer Science
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="200">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Bachelor of Business Administration
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="300">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Bachelor of Arts in Psychology
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="400">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Bachelor of Science in Nursing
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="500">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Bachelor of Engineering in Civil Engineering
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="600">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Bachelor of Arts in International Relations
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="700">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Bachelor of Science in Environmental Science
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="800">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Bachelor of Fine Arts in Graphic Design
               </li>
             </ul>
           </div>
           <div class="course-category">
-            <h3>Graduate Programs</h3>
+            <h3 data-aos="zoom-in">Graduate Programs</h3>
             <ul>
-              <li>
+              <li data-aos="fade" data-aos-delay="100">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Master of Business Administration (MBA)
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="200">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Master of Science in Computer Science
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="300">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Master of Arts in Clinical Psychology
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="400">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Master of Science in Environmental Management
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="500">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Master of Public Health
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="600">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Master of Education
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="700">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Master of Engineering in Mechanical Engineering
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="800">
                 <i class="bi bi-patch-check-fill" style="color: #47ae69"></i
                 >Master of Fine Arts in Creative Writing
               </li>
             </ul>
           </div>
-          <div class="course-category">
+          <div class="course-category" data-aos="zoom-in">
             <h3>Professional Programs</h3>
             <ul>
               <li>
@@ -187,7 +191,7 @@
       </div>
     </section>
 
-    <section class="footer">
+    <section class="footer" data-aos="fade-up">
       <h3>Connect With Us:</h3>
       <div class="icons">
         <i class="bi bi-facebook"></i>
@@ -196,7 +200,7 @@
         <i class="bi bi-linkedin"></i>
       </div>
       <img src="images/Logo.png" alt="logo" />
-      <p>Designed by MIDAS<span>.WEB</span></p>
+      <p>&copy; Work Man University 2024. All rights reserved.</p>
     </section>
 
     <!-- Here, the javascript is used to toggle the showMenu() and hideMeny() -->
@@ -211,6 +215,13 @@
       function hideMenu() {
         navLinks.style.right = "-200px";
       }
+    </script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 600, // Duration of animations in milliseconds
+        once: false, // Whether animation should happen only once
+      });
     </script>
   </body>
 </html>
